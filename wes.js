@@ -22,7 +22,7 @@ client.on('ready', () => {
 });
 
     client.on('message', message => {
-        var prefix = "$";
+        var prefix = "2";
         if (message.author.bot) return;
         if (!message.content.startsWith(prefix)) return;
       
@@ -32,7 +32,7 @@ client.on('ready', () => {
       
       let args = message.content.split(" ").slice(1);
       let x = args.join(" ")
-        if(message.content.startsWith('$say')) {
+        if(message.content.startsWith('2say')) {
             message.channel.send(''+x);
                 message.delete(999)
         }
@@ -42,4 +42,4 @@ client.on('ready', () => {
 
 	  
 
-client.login("");
+client.login("NTEwNDEzNTUxOTgzMzk0ODE3.Dsb_Kg.yfuDwabQ52N_jz1uzSBemGv5nJM");
